@@ -23,6 +23,7 @@ $app->withFacades();
 $app->withEloquent();
 
 $app->configure('geoip');
+$app->configure('cors');
 
 /*
 |--------------------------------------------------------------------------
@@ -83,6 +84,7 @@ $app->register(App\Providers\AppServiceProvider::class);
 $app->register(\Yajra\Datatables\DatatablesServiceProvider::class);
 $app->register(\Torann\GeoIP\GeoIPServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->register(\Barryvdh\Cors\LumenServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
