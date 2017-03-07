@@ -142,7 +142,7 @@ class LinkHelper {
 		 * @return boolean
 		 */
 		if (!env('ALLOW_DOMAINS')) {
-			return false;
+			return true;
 		}
 
 		$allowed_domains = explode('|', env('ALLOW_DOMAINS'));
